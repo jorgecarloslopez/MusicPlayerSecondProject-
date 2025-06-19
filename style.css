@@ -7,5 +7,15 @@
   font-family: "nunito", sans-serif;
 }
 body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+
   background: url(Images/istockphoto-512597046-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
