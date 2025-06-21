@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 :root {
-  --blanco: rgb(228, 228, 228, 1);
+  --blanco: lab(100% 0.01 -0.01);
 }
 * {
   margin: 0;
@@ -16,7 +16,7 @@ body {
   align-items: center;
   width: 100%;
 
-  background: url(Images/istockphoto-512597046-612x612.jpg);
+  background: url(Images/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(8px);
@@ -25,8 +25,8 @@ body {
 
 body ::before {
   content: "";
-
-  background-color: rgba(127, 124, 124, 0.112);
+  /*position: absolute;*/
+  background-color: rgba(26, 25, 24, 0);
   top: 0;
   bottom: 0;
   left: 0;
@@ -35,7 +35,7 @@ body ::before {
 }
 
 body > * {
-  position: "relative";
+  position: relative;
   z-index: 2;
 }
 .reproductor-musica {
@@ -43,4 +43,20 @@ body > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--blanco);
+  width: 380px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgba(228, 228, 228, 0.1);
+}
+
+.reproductor-musica h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.reproductor-musica p {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
 }
