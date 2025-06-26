@@ -61,7 +61,7 @@ body > * {
   opacity: 0.6;
 }
 
-#progreso {
+.progreso {
   appearance: none;
   --webkit-appearance: none;
   width: 100%;
@@ -70,4 +70,15 @@ body > * {
   border-radius: 4px;
   margin: 32px 0 24px;
   cursor: pointer;
+}
+
+.progreso ::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(194, 158, 158, 0.943);
+  width: 16px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  outline: 4px solid var(--blanco);
+  box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
 }
