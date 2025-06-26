@@ -23,10 +23,10 @@ body {
   -webkit-backdrop-filter: blur(8px);
 }
 
-body ::before {
+body::before {
   content: "";
   /*position: absolute;*/
-  background-color: rgba(26, 25, 24, 0);
+  background-color: rgba(0, 0, 0, 0.1);
   top: 0;
   bottom: 0;
   left: 0;
@@ -72,13 +72,33 @@ body > * {
   cursor: pointer;
 }
 
-.progreso ::-webkit-slider-thumb {
+#progreso::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  background: rgba(194, 158, 158, 0.943);
+  background: rgba(126, 136, 236, 0.798);
   width: 16px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   outline: 4px solid var(--blanco);
   box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
 }
+
+.controles {
+  display: flex;
+  justify-content: center;
+}
+.controles button {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 20px;
+  background: rgb(165, 165, 165, 0.3);
+  color: var(--blanco);
+  border-radius: 50%;
+  border: 1px solid var(--blanco);
+  outline: 0;
+  font-size: 1.5rem;
+  box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
+  cursor: pointer;
+}
+
+.controles;
