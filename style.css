@@ -101,4 +101,13 @@ body > * {
   cursor: pointer;
 }
 
-.controles;
+.controles .control:hover {
+  transform: scale(1.2);
+}
+
+.controles .iconoControl {
+  transform: scale(1.3);
+}
+.controles .iconoControl:hover {
+  transform: scale(1.4);
+}
