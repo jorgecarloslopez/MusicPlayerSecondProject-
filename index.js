@@ -53,8 +53,12 @@ botonReproducirPausar.addEventListener("click", reproducirPausar);
 function reproducirPausar() {
   if (cancion.paused) {
     reproducirCancion();
+    iconoControl.classList.add("bi-pause-fill");
+    iconoControl.classList.remove("bi-pause-fill");
   } else {
     pausarCancion();
+    iconoControl.classList.remove("bi-pause-fill");
+    iconoControl.classList.add("bi-pause-fill");
   }
 }
 
